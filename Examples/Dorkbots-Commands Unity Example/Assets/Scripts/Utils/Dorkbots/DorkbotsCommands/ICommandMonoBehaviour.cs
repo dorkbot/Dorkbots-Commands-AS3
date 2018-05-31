@@ -39,6 +39,12 @@ namespace Dorkbots.DorkbotsCommands
     {
         MonoBehaviour monoBehaviorObject { set; get; }
 
+        /// <summary>
+        /// Initializes the command</summary>
+        /// <param name="monoBehaviorObject">Pass an optional MonoBehavior object to do things like use Coroutines other MonoBehavior things.</param>
+        /// <param name="data">This is of type ICommandData for efficiency, use this param to pass data and references to the command. The param has to implement the interface.</param>
+        /// <param name="name">Optional string name that can be used for finding the command or debugging, etc.</param>
+        /// <returns>Returns a reference to this Command.</returns>
         ICommand Init(MonoBehaviour monoBehaviorObject = null, ICommandData data = null, string name = "");
     }
 }

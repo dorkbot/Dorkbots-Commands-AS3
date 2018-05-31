@@ -47,6 +47,11 @@ namespace Dorkbots.DorkbotsCommands
 
         }
 
+        /// <summary>
+        /// Initializes the command</summary>
+        /// <param name="data">This is of type ICommandData for efficiency, use this param to pass data and references to the command. The param has to implement the interface.</param>
+        /// <param name="name">Optional string name that can be used for finding the command or debugging, etc.</param>
+        /// <returns>Returns a reference to this Command.</returns>
         public ICommand Init(ICommandData data = null, string name = "")
         {
             this.name = name;
