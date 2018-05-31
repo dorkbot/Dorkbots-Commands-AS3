@@ -523,11 +523,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Utils/Dorkbots/DorkbotsCommands
+    - Assets/Scripts/CommandsExample
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Utils/Dorkbots/DorkbotsCommands
+  - Assets/Scripts/CommandsExample
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/dayvid/Desktop/Resources/Dorkbots Repos/Dorkbots-Commands/Examples/Dorkbots-Commands
     Unity Example
@@ -535,8 +535,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 262c0000
-    m_LastClickedID: 11302
+    m_SelectedIDs: e82c0000
+    m_LastClickedID: 11496
     m_ExpandedIDs: 000000000c2b0000562b0000702b0000742c0000162d0000962d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -596,18 +596,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c62300000000000048510000c22e0000422d0000a6350000a4310000542d0000ea2f0000243400004c2e0000a62e00005c330000ba330000ec3000005c35000030310000c8320000363500007e2e00002c3300006e320000642e000000340000902f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: ExampleCommandStateTwo
+      m_OriginalName: ExampleCommandStateTwo
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 11780
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_CreateAssetUtility:
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a2070000
+    m_SelectedIDs: 042e0000
     m_LastClickedID: 0
     m_ExpandedIDs: f0fbffff00000000
     m_RenameOverlay:

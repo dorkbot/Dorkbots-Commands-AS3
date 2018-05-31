@@ -61,7 +61,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CommandsExample\ExampleCommand.cs" />
     <Compile Include="Assets\Scripts\CommandsExample\ExampleCommandMonoBehaviour.cs" />
-    <Compile Include="Assets\Scripts\CommandsExample\ExampleCommandState.cs" />
+    <Compile Include="Assets\Scripts\CommandsExample\ExampleCommandStateOne.cs" />
+    <Compile Include="Assets\Scripts\CommandsExample\ExampleCommandStateTwo.cs" />
     <Compile Include="Assets\Scripts\CommandsExample\Main.cs" />
     <Compile Include="Assets\Scripts\Utils\Dorkbots\DorkbotsCommands\Command.cs" />
     <Compile Include="Assets\Scripts\Utils\Dorkbots\DorkbotsCommands\CommandMonoBehaviour.cs" />

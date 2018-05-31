@@ -38,19 +38,34 @@ namespace CommandsExample
 {
 	public class Main : MonoBehaviour
     {
-        private ExampleCommandState exampleCommandState;
+        private ExampleCommandStateOne exampleCommandStateOne;
+        private ExampleCommandStateTwo exampleCommandStateTwo;
 
         // Use this for initialization
         void Start()
         {
-            exampleCommandState = new ExampleCommandState(this);
-            exampleCommandState.commandsCompletedSignal.Add(CommandsCompleteHandler);
-            exampleCommandState.Start();
+            exampleCommandStateTwo = new ExampleCommandStateTwo(this);
+            exampleCommandStateTwo.commandsCompletedSignal.Add(CommandsStateTwoCompleteHandler);
+
+            exampleCommandStateOne = new ExampleCommandStateOne(this);
+            exampleCommandStateOne.commandsCompletedSignal.Add(CommandsStateOneCompleteHandler);
+            exampleCommandStateOne.Start();
         }
 
-        private void CommandsCompleteHandler(ICommandsState commandsState)
+        private void CommandsStateOneCompleteHandler(ICommandsState commandsState)
         {
-            Debug.Log("<Main> CommandsCompleteHandler");
+            Debug.Log("<Main> CommandsStateOneCompleteHandler");
+
+            exampleCommandStateOne.Dispose();
+
+            exampleCommandStateTwo.Start();
+        }
+
+        private void CommandsStateTwoCompleteHandler(ICommandsState commandsState)
+        {
+            Debug.Log("<Main> CommandsStateTwoCompleteHandler");
+
+            exampleCommandStateTwo.Dispose();
         }
     }
 }
