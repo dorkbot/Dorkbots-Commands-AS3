@@ -108,6 +108,9 @@ namespace CommandsExample
 
             // add the lighter commands that don't have the built in reference to a MonoBehaviour Object
             rootCommands.AddCommand(new ExampleCommand().Init(null, "Command 40"));
+
+            // This shows a basic concrete command using other commands.
+            rootCommands.AddCommand(new ExampleWrapperCommand().Init());
         }
     }
 }

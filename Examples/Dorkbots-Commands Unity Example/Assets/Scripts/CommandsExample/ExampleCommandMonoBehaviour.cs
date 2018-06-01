@@ -42,7 +42,7 @@ namespace CommandsExample
     {
         private Coroutine timerCoroutine;
 
-        public ExampleCommandMonoBehaviour() : base()
+        public ExampleCommandMonoBehaviour()
         {
 
         }

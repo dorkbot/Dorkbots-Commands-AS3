@@ -37,6 +37,7 @@ namespace Dorkbots.DorkbotsCommands
     {
 		bool running { get; }
         string name { get; }
+        ICommandData data { get; }
 
         /// <summary>
         /// Initializes the command</summary>

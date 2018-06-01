@@ -41,6 +41,7 @@ namespace Dorkbots.DorkbotsCommands
 
         public bool running { get; private set; }
         public string name { get; private set; }
+        public ICommandData data{ get; private set; }
 
         public Command()
         {
@@ -54,14 +55,15 @@ namespace Dorkbots.DorkbotsCommands
         /// <returns>Returns a reference to this Command.</returns>
         public ICommand Init(ICommandData data = null, string name = "")
         {
+            this.data = data;
             this.name = name;
 
-            InitVirtual(data);
+            InitVirtual();
 
             return this;
         }
 
-        protected virtual void InitVirtual(ICommandData data = null)
+        protected virtual void InitVirtual()
         {
         }
 
@@ -119,6 +121,7 @@ namespace Dorkbots.DorkbotsCommands
 
             if (running) Stop();
             commandCallback = null;
+            data = null;
         }
 
         protected virtual void DisposeVirtual()

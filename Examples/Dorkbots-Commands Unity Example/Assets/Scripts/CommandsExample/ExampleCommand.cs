@@ -38,7 +38,7 @@ namespace CommandsExample
 {
     public class ExampleCommand : Command, ICommand
     {
-        public ExampleCommand() : base()
+        public ExampleCommand()
         {
 
         }

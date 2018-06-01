@@ -31,10 +31,15 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 * THE SOFTWARE.
 */
+using Signals;
+
 namespace Dorkbots.DorkbotsCommands
 {
+    /// <summary>
+    /// This is used only as a type for arguments and parameters. Feel free to add an fields, even Signals. It will of course need to be unboxed in the Command.
+    /// </summary>
 	public interface ICommandData
     {
-		
+
     }
 }
